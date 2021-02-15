@@ -3,25 +3,27 @@ import styled from 'styled-components';
 import {About} from '../styles';
 import Toggle from './Toggle';
 import { AnimateSharedLayout } from "framer-motion";
+import {Wave2} from '../components/Wave2';
 
 const FaqSection = () => {
     return (
 <Faq>
+<Wave2/>
     <h2>Any questions? <span>FAQ</span></h2>
     <AnimateSharedLayout>
-    <Toggle title='How do I start?'>
+    <Toggle title='What services do we provide?'>
         <div className="answer">
             <p>Lorem ipsum dolor sit amet.</p>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias, architecto?</p>
         </div> 
     </Toggle>
-    <Toggle title='Daily schedule'>
+    <Toggle title='How to book? Schedule and availability.'>
         <div className="answer">
             <p>Lorem ipsum dolor sit amet.</p>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias, architecto?</p>
         </div>
     </Toggle>
-<Toggle title="Different payment methods">
+<Toggle title="How to get to Terra Spa?">
         <div className="answer">
             <p>Lorem ipsum dolor sit amet.</p>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias, architecto?</p>
@@ -34,12 +36,16 @@ const FaqSection = () => {
         </div>
    </Toggle>
    </AnimateSharedLayout>
+   
 </Faq>
+
     )
 }
 
 const Faq = styled(About)`
+color: black;
 display: block;
+
 span {
     display: block;
 }
@@ -48,8 +54,8 @@ h2 {
     font-weight: lighter;
 }
 .faq-line {
-    background: #cccccc;
-    height: 0.2rem;
+    background: #d84ecc;
+    height: 3px;
     margin: 2rem 0rem;
     width: 100%;
 
@@ -61,6 +67,7 @@ h2 {
 
 }
 .answer {
+    
     padding: 2rem 0rem;
     p {
         padding: 1rem 0rem;

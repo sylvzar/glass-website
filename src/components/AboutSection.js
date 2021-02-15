@@ -1,5 +1,5 @@
 import React from 'react';
-import home1 from "../img/home1.png";
+import beauty1 from "../img/beauty1.jpg";
 import {About, Description, Image, Hide} from "../styles";
 import {motion} from 'framer-motion';
 import {titleAnim, fade, photoAnim} from "../animation";
@@ -11,7 +11,7 @@ const AboutSection = () => {
    <Description>
        <motion.div>
            <Hide>
-               <motion.h2 variants={titleAnim} >We work to make</motion.h2>
+               <motion.h2 variants={titleAnim} >Making</motion.h2>
            </Hide>
            <Hide>
                <motion.h2 variants={titleAnim} >your <span>dreams</span> come </motion.h2>
@@ -20,10 +20,10 @@ const AboutSection = () => {
                <motion.h2 variants={titleAnim} >true.</motion.h2>
            </Hide>
        </motion.div>
-       <motion.p variants={fade}>Contact us for any photography or videography ideas that you have. We have professionals with amazing skills.</motion.p>
+       <motion.p variants={fade}>Our spa offer a variety of relaxing treatments and healing sessions as well as massages, facials, and body scrubs.</motion.p>
        <motion.button variants={fade}>Contact Us</motion.button>
    </Description>
-   <Image><motion.img variants={photoAnim} initial="hidden" animation="show" src={home1} alt="guy with a camera"/></Image>
+   <Image><motion.img variants={photoAnim} initial="hidden" animation="show" src={beauty1} alt="towels"/></Image>
    <Wave/>
 </About>
     )

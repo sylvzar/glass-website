@@ -1,77 +1,74 @@
 //Import Images
-import athlete from "./img/athlete-small.png";
-import goodtimes from "./img/goodtimes-small.png";
-import theracer from "./img/theracer-small.png";
-import athlete2 from "./img/athlete2.png";
-import goodtimes2 from "./img/good-times2.jpg";
-import theracer2 from "./img/the-racer2.jpg";
+import massage from "./img/massage.jpg";
+import bath from "./img/bath.jpg";
+import stones from "./img/stones.jpg"
 
 export const MovieState = () => {
   return [
     {
-      title: "The Athlete",
-      mainImg: athlete,
-      secondaryImg: athlete2,
-      url: "/work/the-athlete",
+      title: "Massage",
+      mainImg: massage,
+      secondaryImg: massage,
+      url: "/work/massage",
       awards: [
         {
-          title: "Truly A masterpiece",
+          title: "Traditional massage",
           description:
             "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
         {
-          title: "Fresh look on a brutal sport.",
+          title: "Thai massage",
           description:
             "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
         {
-          title: "It’s okay lmao.",
+          title: "Oil massage",
           description:
             "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
       ],
     },
     {
-      title: "Good Times",
-      mainImg: goodtimes,
-      url: "/work/good-times",
-      secondaryImg: goodtimes2,
+      title: "Relax",
+      mainImg: bath,
+      url: "/work/bath",
+      secondaryImg: bath,
       awards: [
         {
-          title: "Truly A masterpiece",
+          title: "Sauna",
           description:
             "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
         {
-          title: "Fresh look on a brutal sport.",
+          title: "Jacuzzi",
           description:
             "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
         {
-          title: "It’s okay lmao.",
+          title: "Aqua massage",
           description:
             "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
       ],
     },
     {
-      title: "The Racer",
-      mainImg: theracer,
-      url: "/work/the-racer",
-      secondaryImg: theracer2,
+      title: "Treatments",
+      mainImg: stones,
+      url: "/work/stones",
+      secondaryImg: stones,
       awards: [
         {
-          title: "Truly A masterpiece",
+          title: "Hot stone treatment",
           description:
             "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
         {
-          title: "Fresh look on a brutal sport.",
+          title: "Full body scrub",
           description:
             "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
         {
-          title: "It’s okay lmao.",
+          title: "Face mask and scrub",
           description:
             "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },

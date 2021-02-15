@@ -8,24 +8,24 @@ const Nav = () => {
     const {pathname} = useLocation();
     return (
         <StyledNav>
-            <h1><Link id="logo" to="/">Capture</Link></h1>
+            <h1><Link id="logo" to="/">Terra</Link></h1>
         <ul>
             <li>
-                <Link to="/">1. About us</Link>
+                <Link to="/">Our Spa</Link>
                 <Line 
                 transition={{duration: 0.75}} 
                 initial={{ width: "0%"}} 
                 animate={{ width: pathname === '/' ? "50%" : "0%" }} />
             </li>
             <li>
-                <Link to="/work">2. Our Work</Link>
+                <Link to="/work">Pricing</Link>
                 <Line 
                 transition={{duration: 0.75}} 
                 initial={{ width: "0%"}} 
                 animate={{ width: pathname === '/work' ? "50%" : "0%" }} />
             </li>
             <li>
-                <Link to="/contact">3. Contact us</Link>
+                <Link to="/contact">Book Treatment</Link>
                 <Line 
                 transition={{duration: 0.75}} 
                 initial={{ width: "0%"}} 
@@ -43,7 +43,7 @@ margin: auto;
 justify-content: space-between;
 align-items: center;
 padding: 1rem 10rem;
-background: #282828;
+background: #412c3a;
 position: sticky;
 top: 0;
 z-index: 10;
@@ -57,7 +57,10 @@ ul {
 }
 
 li {
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
     padding-left: 10rem;
+    font-weight: lighter;
     position: relative;
 }
 
@@ -90,7 +93,7 @@ li {
 
 const Line = styled(motion.div)`
 height: 0.3rem;
-background: #23d997;
+background: #f0cfee;
 width: 0%;
 position: absolute;
 bottom: -60%;

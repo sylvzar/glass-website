@@ -19,9 +19,10 @@ html {
 }
 
 body {
-    background: #1b1b1b;
+    background: #f8eaf3;
     font-family: 'Inter', sans-serif;
     overflow-x: hidden;
+    color: black;
 }
 
 button {
@@ -30,27 +31,29 @@ button {
     font-size: 1.1.rem;
     cursor: pointer;
     padding: 1rem 2rem;
-    border: 3px solid #23d997;
+    border: 2px solid #eeb2eb;
     background: transparent;
-    color: white;
+    color: black;
     transition: all 0.5s ease;
+    border-radius: 5px;
 &:hover {
-    background-color: #23d997;
-    color: white;
+    background-color: #eeb2eb;
+    color: black;
 }
 }
 h2 {
+    color: black;
     font-weight: lighter;
     font-size: 3rem;
 }
 
 h3 {
-    color: white;
+    color: black;
 }
 
 p {
     padding: 3rem 0rem;
-    color: #ccc;
+    color: black;
     font-size: 1.4rem;
     line-height: 150%;
 }
@@ -62,7 +65,7 @@ h4 {
 
 span {
     font-weight: bold;
-    color: #23d997;
+    color: #eeb2eb;
 }
 
 a {

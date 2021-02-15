@@ -6,11 +6,11 @@ import ScrollTop from '../components/ScrollTop';
 
 const ContactUs = () => {
     return (
-    <ContactStyle variants={pageAnimation} initial='hidden' animate='show' exit="exit" style={{background: "#fff"}}>
+    <ContactStyle variants={pageAnimation} initial='hidden' animate='show' exit="exit" style={{background: "rgba(252, 232, 248, 0.2)"}}>
     <Title>
         <Hide>
         <motion.h2 variants={titleAnim}>
-        Get in touch.
+        Make a booking
         </motion.h2>
         </Hide>
     </Title>
@@ -19,19 +19,19 @@ const ContactUs = () => {
     <Hide>
     <Social variant={titleAnim}>
     <Circle/>
-    <h2>Message Us</h2>
+    <h2>Message us @ bookings@terraspa.com</h2>
     </Social>
     </Hide>
     <Hide>
     <Social variant={titleAnim}>
     <Circle/>
-    <h2>Send An Email</h2>
+    <h2>Call our branch number - Cardiff 02920XXXXX</h2>
     </Social>
     </Hide>
     <Hide>
     <Social variant={titleAnim}>
     <Circle/>
-    <h2>Social Media</h2>
+    <h2>Follow our social media accounts for latest offers!</h2>
     </Social>
     </Hide>
     </div>
@@ -43,7 +43,7 @@ const ContactStyle = styled(motion.div)`
 padding: 5rem 10rem;
 color: #353535;
 min-height: 90vh;
-
+background: rgb(252, 201, 242);
 @media (max-width: 1300px) {
 
     padding: 2rem;
@@ -66,8 +66,8 @@ overflow: hidden;`
 
 const Circle = styled.div`
 border-radius: 50%;
-width: 3rem;
-height: 3rem;
+width: 2rem;
+height: 2rem;
 background: #353535;`
 
 const Social = styled(motion.div)`
